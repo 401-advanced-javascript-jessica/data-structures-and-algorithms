@@ -14,4 +14,4 @@ As array methods were disallowed as were array methods, I chose to use a for loo
 
 ## Solution
 
-![Image of Array Reverse]('/assets/array_reverse.jpg');
+![Image of Array Reverse]('./assets/array_reverse.jpg');
