@@ -36,7 +36,6 @@ class LinkedList {
         string += (current.value + ' ');
         current = current.next;
       }
-      console.log(string);
       return string;
   }
 
@@ -61,6 +60,69 @@ class LinkedList {
      // SOMETHING ELSE n_n
      current = current.next;
    }
+  }
+
+  append(value){
+      if(this.head === null){
+          this.head = new Node(value)
+      } else {
+          this.appendHelper(value, this.head);
+      }
+  }
+
+  appendHelper(value, node) {
+      let current = node;
+      if (!current.next){
+          current.next = new Node(value);
+      } else {
+          this.appendHelper(value, current.next)
+      }
+  }
+
+  insertBefore(value, newVal) {
+      let current = this.head;
+      let newNode = new Node(newVal);
+
+      if(this.head === null) {
+          this.head = newNode;
+      } else if (this.head.value === value){
+          newNode.next = this.head;
+          this.head = newNode;
+      }
+
+      while(current){
+          if(!current.next) {
+              return -1;
+          } else if(current.next.value === value){
+              newNode.next = current.next;
+              current.next = newNode;
+              return;
+          }
+          current = current.next;
+      }
+
+  }
+
+  insertAfter(value, newVal){
+      let current = this.head;
+      let newNode = new Node(newVal);
+
+      if(current === null) {
+          current = newnode;
+      }
+
+      while(current) {
+          if (!current){
+              current = newNode;
+              return;
+          } else if(current.value === value) {
+              newNode.next = current.next;
+              current.next = newNode;
+              return;
+          }
+          current = current.next;
+      }
+
   }
 }
 
