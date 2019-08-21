@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9a727e1-4917-4011-986d-f432cde69625" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/data-structures-and-algorithms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Structures/linkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Structures/linkedList/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Structures/linkedList/__tests__/linked-list.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Structures/linkedList/__tests__/linked-list.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data-Structures/linkedList/linked-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Structures/linkedList/linked-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566267392264</updated>
-      <workItem from="1566267393789" duration="6027000" />
+      <workItem from="1566267393789" duration="9486000" />
     </task>
     <servers />
   </component>
