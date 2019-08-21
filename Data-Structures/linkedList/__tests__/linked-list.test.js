@@ -15,6 +15,14 @@ describe('Testing Liked List', () => {
     newList2.insertAtHead(3);
     newList2.insertAtHead(4);
 
+    let list = new linkedList();
+    list.insertAtHead(1);
+    list.insertAtHead(2);
+    list.insertAtHead(3);
+    list.insertAtHead(4);
+    list.insertAtHead(5);
+    list.insertAtHead(6);
+
     test('Create an empty list', () => {
         let nullList = new linkedList();
         expect(nullList.head).toEqual(null);
@@ -80,6 +88,29 @@ describe('Testing Liked List', () => {
     test('Can successfully insert after a node in the middle of the linked list', () => {
         newList2.insertAfter(2, 7);
         expect(newList2.toString()).toEqual('10 4 3 20 2 7 1 ');
-    })
+    });
+
+    test('getFromEnd(k) can find the kth value from the end of the list', () => {
+        expect(list.getFromEnd(2)).toEqual(3);
+    });
+
+    test('getFromEnd(k) Where k is greater than the length of the linked list', () => {
+        expect(list.getFromEnd(20)).toEqual('k is invalid');
+    });
+
+    test('getFromEnd(k) Where k and the length of the list are the same', () => {
+        expect(list.getFromEnd(6)).toEqual('k is invalid');
+    });
+
+    test('getFromEnd(k) Where k is not a positive integer', () => {
+        expect(list.getFromEnd(-1)).toEqual('k is invalid');
+    });
+
+    test('getFromEnd(k) Where the linked list is of a size 1', () => {
+        let oneElList = new linkedList();
+        oneElList.insertAtHead(10);
+        expect(oneElList.getFromEnd(1)).toEqual('k is invalid');
+
+    });
 
 });

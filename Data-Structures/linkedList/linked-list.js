@@ -124,6 +124,31 @@ class LinkedList {
       }
 
   }
+
+  getFromEnd(k){
+      if (k < 0){
+          return 'k is invalid';
+      }
+      let current = this.head;
+      let kth = this.head;
+      let count = 0;
+      if(this.head){
+          while (count <= k){
+              if(current){
+                  current = current.next;
+                  count++;
+              } else {
+                  return 'k is invalid';
+              }
+
+          }
+          while (current){
+              current = current.next;
+              kth = kth.next;
+          }
+      }
+      return kth.value;
+  }
 }
 
 module.exports = LinkedList;
