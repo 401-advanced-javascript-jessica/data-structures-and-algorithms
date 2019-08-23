@@ -113,4 +113,16 @@ describe('Testing Liked List', () => {
 
     });
 
+    test('reverse() for a list', () => {
+        expect(list.toString()).toEqual('6 5 4 3 2 1 ');
+        list.reverse();
+        expect(list.toString()).toEqual('1 2 3 4 5 6 ');
+    });
+
+    test('reverse() for a null list', () => {
+        let nullList = new linkedList();
+
+        expect(nullList.reverse()).toEqual('List is Empty');
+    });
+
 });

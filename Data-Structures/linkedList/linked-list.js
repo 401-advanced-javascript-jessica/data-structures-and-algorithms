@@ -149,6 +149,28 @@ class LinkedList {
       }
       return kth.value;
   }
+
+  reverse(){
+      if(!this.head) {
+          return 'List is Empty'
+      }
+      let previous = this.head;
+      let current = this.head.next;
+      let next = current.next;
+      previous.next = null;
+      while(current){
+          if(!next){
+              current.next = previous;
+              this.head = current;
+              return;
+          } else {
+              current.next = previous;
+              previous = current;
+              current = next;
+              next = next.next;
+          }
+      }
+  }
 }
 
 module.exports = LinkedList;
