@@ -1,6 +1,6 @@
 'use strict';
 
-const Node = require('../linkedList/node');
+// const Node = require('../linkedList/node');
 const LinkedList = require('../linkedList/linked-list');
 
 class Stack{
@@ -11,16 +11,27 @@ class Stack{
 
     push(value){
         this.storage.insertAtHead(value);
+        this.top = this.storage.head;
     }
 
     pop(){
-        const head = this.storage.head;
-        this.storage.head = this.storage.head.next;
-        return head;
+        if(this.storage.head) {
+            const head = this.storage.head.value;
+            this.storage.head = this.storage.head.next;
+            this.top = this.storage.head;
+            return head;
+        } else {
+            return 'The Stack Is Empty';
+        }
     }
 
     peek(){
-        return this.head;
+        if(this.storage.head){
+            return this.storage.head.value;
+        } else {
+            return 'The Stack Is Empty';
+        }
+
     }
 }
 
@@ -31,25 +42,34 @@ class Queue{
     }
 
     enqueue(value){
-        this.queueStorage.insertAtHead(value);
+        if(!this.top){
+            this.queueStorage.append(value);
+            this.front = this.queueStorage.head;
+        } else {
+            this.queueStorage.append(value);
+        }
+
     }
 
     dequeue(){
-        let current = this.head;
-        let previous = this.head;
-        while (current.next !== null){
-            previous = current;
-            current = current.next;
+        if(!this.front){
+            return 'The Queue Is Empty';
         }
-        previous.next = null;
-        return current.value;
+        let value = this.front.value;
+        this.front = this.front.next;
+        return value;
     }
 
     peek(){
-        let current = this.head;
-        while (current.next !== null){
-            current = current.next;
+        if(this.front){
+            return this.front.value;
+        } else {
+            return 'The Queue Is Empty';
         }
-        return current.value;
+
     }
 }
+
+module.exports = {};
+module.exports.Stack = Stack;
+module.exports.Queue = Queue;
