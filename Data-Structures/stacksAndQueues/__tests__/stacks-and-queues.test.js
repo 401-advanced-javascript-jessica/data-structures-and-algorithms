@@ -41,7 +41,7 @@ describe('Testing Stacks and Queues', () => {
         newStack.push(3);
         expect(newStack.peek()).toEqual(3);
     });
-    
+
     test('Can successfully instantiate an empty queue', () => {
         expect(newQueue).toBeTruthy();
         expect(newQueue.top).toBeFalsy();
