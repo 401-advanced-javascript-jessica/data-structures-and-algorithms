@@ -6,4 +6,4 @@
 
 [Stack And Queue](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/Data-Structures/stacksAndQueues)
 
-
+[Queue with Two Stacks](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/challenges/queueWithStacks)
