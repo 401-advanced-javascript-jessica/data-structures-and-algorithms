@@ -7,5 +7,5 @@ superagent.get('https://pokeapi.co/api/v2/pokemon/ditto/')
     console.log(response.body);
     return superagent.get('https://pokeapi.co/api/v2/pokemon/snorlax/');
   })
-  .then(() => console.log('This is the other then'))
+  .then(() => console.log('This is the other then'));
 
