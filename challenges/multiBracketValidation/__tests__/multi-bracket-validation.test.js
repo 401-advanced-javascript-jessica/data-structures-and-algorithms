@@ -28,6 +28,10 @@ describe('test multiBracketValidation function', () => {
         let str = '[({stuff in the middle})()]';
         expect(multiBracketValidation(str)).toEqual(true);
     });
+    test('a string with only open brackets', () => {
+        let str = '[[[((((({{{{';
+        expect(multiBracketValidation(str)).toEqual(false);
+    });
 
 
 });

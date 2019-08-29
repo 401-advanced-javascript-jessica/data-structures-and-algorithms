@@ -31,7 +31,13 @@ const multiBracketValidation = function (input){
             }
         }
     }
-    return true;
+    if(!stack.top){
+        return true;
+    } else {
+        return false;
+    }
+
+
 }
 
 module.exports = multiBracketValidation;
