@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
+    "lint": "eslint \"**/*.js\"",
     "test-watch": "jest --watchAll --verbose"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms#readme",
   "dependencies": {
+    "eslint": "^6.2.2",
     "jest": "^24.8.0"
   }
 }
