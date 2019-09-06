@@ -2,21 +2,21 @@
 
 const BinaryTree = require('../../../Data-Structures/binaryTree/binary-tree');
 const BTNode = require('../../../Data-Structures/binaryTree/binary-tree-node');
-const findPathLengthBetween = require('../path-length');
+const pathLength = require('../path-length');
 
 
 describe('Find the distance between a parent and child node in a binary tree', () => {
 
   test('find the distance in a null tree', () => {
     let tree = new BinaryTree();
-    expect(findPathLengthBetween(tree.root, tree.root, tree.root)).toEqual(null);
+    expect(pathLength(tree.root, tree.root, tree.root)).toEqual(null);
   });
 
   test('find the distance in a tree with one node', () => {
 
     let tree = new BinaryTree();
     tree.root = new BTNode(10);
-    expect(findPathLengthBetween(tree.root, tree.root, tree.root)).toEqual(0);
+    expect(pathLength(tree.root, tree.root, tree.root)).toEqual(0);
   });
 
   test('shoud find the distance in a tree with multiple nodes', () => {
@@ -37,7 +37,7 @@ describe('Find the distance between a parent and child node in a binary tree', (
     twenty.right = thirty;
     three.right = four;
 
-    expect(findPathLengthBetween(tree.root, one, four)).toEqual(3);
+    expect(pathLength(tree.root, one, four)).toEqual(3);
   });
 
 
