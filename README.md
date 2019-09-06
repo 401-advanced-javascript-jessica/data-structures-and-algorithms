@@ -13,3 +13,5 @@
 [Check for Balanced Brackets](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/challenges/multiBracketValidation)
 
 [Find Leaf Nodes](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/challenges/findLeaves)
+
+[Find Path Length](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/challenges/pathLength)
