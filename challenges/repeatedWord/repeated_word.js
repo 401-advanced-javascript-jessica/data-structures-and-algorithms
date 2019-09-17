@@ -19,5 +19,28 @@ const removeSyntax = (string) => {
   return string.match(regex);
 };
 
+//a solution with no library methods and less memory usage
+const altFirstRepeatedWord = (string) => {
+  let words = new Set();
+  let word = '';
+  let i = 0;
+  let regex = /[a-zA-Z']/;
+  do {
+    while(regex.test(string[i])){
+      word += string[i];
+      i++;
+    }
+    if(words.has(word.toLowerCase())){
+      return word;
+    } else if(word){
+      words.add(word.toLowerCase());
+    }
+    i++;
+    word = '';
+  } while (i < string.length);
 
-module.exports = firstRepeatedWord;
+
+  return 'no repeats';
+};
+
+module.exports = altFirstRepeatedWord;
