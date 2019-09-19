@@ -17,3 +17,5 @@
 [Find First Repeated Word](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/challenges/repeatedWord)
 
 [Get Height of a Binary Tree](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/challenges/treeHeight)
+
+[Remove Duplicates from a Linked List](https://github.com/401-advanced-javascript-jessica/data-structures-and-algorithms/tree/master/challenges/removeDuplicates)
